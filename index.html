@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendre Beignet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<!-- ---------- Début Écran d'introduction -------- -->
+    <header>
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="text-center">Tendre Beignet</h1>
+            </div>
+
+            <div class="fleches">
+                <p class="defilement">Défilez vers le bas</p>
+                <div class="fleche top col">
+                    <img src="./img/img_elements_visuels/fleches/top_fleche.svg" alt="fleche_top" class="fleche top">
+                </div>
+                <div class="fleche centre col">
+                    <img src="./img/img_elements_visuels/fleches/centre_fleche.svg" alt="fleche_centre" class="fleche centre">
+                </div>
+                <div class="fleche bas col">
+                    <img src="./img/img_elements_visuels/fleches/bas_fleche.svg" alt="fleche_bas" class="fleche bas">
+                </div>
+            </div>
+
+            <div class="source">
+                <div class="text-center col">
+                    <p><a href="https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/">Projet scrollytelling</a> créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
+                    <br> © 2024 - Conception, illustrations et développement web: Melody Chiasson texture: pexels.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="texture"></div>
+    </header>
+<!-- ---------- Fin Écran d'introduction ---------- -->
+    <main>
+<!-- ---------- Début Chapitre 1 ------------------ -->
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap01.png" id="bg-chap01" alt="arriere-plan">
+            <div id="chapitre01">
+                <div id="texte1-chap01" class="text-center"> 
+                    <p>Albert est un chef pâtissier qui aime beaucoup les beignes.</p>
+                </div>
+                <img src="./img/img_elements_visuels/chap_01/affiche_centre_chap01.png" alt="affiche-01" id="affiche01-chap01">
+                <img src="./img/img_elements_visuels/chap_01/affiche_droite_chap01.png" alt="affiche-02" id="affiche02-chap01">
+                <img src="./img/img_elements_visuels/chap_01/affiche_gauche_chap01.png" alt="affiche-03" id="affiche03-chap01">
+                <div id="perso-chap01">
+                    <img src="./img/img_personnages/chap_01/bras_droit_chap01.png" alt="bras-droit" id="bras-chap01">
+                    <img src="./img/img_personnages/chap_01/homme_chap01.png" alt="homme" id="homme-chap01">
+                    <img src="./img/img_personnages/chap_01/tete_chap01.png" alt="tete" id="tete-chap01">
+                    <img src="./img/img_personnages/chap_01/yeux_chap01.png" alt="yeux" id="yeux-chap01">
+                </div>
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>rotate</li> 
+                <li>scale x</li> 
+                <li>scale y</li>
+                <li>timeline</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section> 
+<!-- ---------- Fin Chapitre 1 -------------------- -->
+        
+<!-- ---------- Début Chapitre 2 ------------------ -->
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap02.png" id="bg-chap02" alt="arriere-plan">
+            <div id="chapitre02">
+                <div id="texte1-chap02" class="text-center"> 
+                    <p>Tellement, qu'en hiver, il glisse sur les montagnes avec un tube en forme de beigne</p>
+                </div>
+                <img src="./img/img_elements_visuels/chap_02/arriere_plan_chap02.png" alt="plan-arriere" id="plan-arriere-chap02">
+                <img src="./img/img_elements_visuels/chap_02/centre_plan_chap02.png" alt="plan-centre" id="plan-centre-chap02">
+                <img src="./img/img_elements_visuels/chap_02/avant_plan_chap02.png" alt="plan-avant" id="plan-avant-chap02">
+                <img src="./img/img_personnages/chap_02/homme_chap02.png" alt="homme" id="homme-chap02">
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>translation x</li> 
+                <li>translation y</li> 
+                <li>scale</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 2 -------------------- -->
+
+<!-- ---------- Début Chapitre 3 ------------------ -->
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap03.png" id="bg-chap03">
+            <div id="chapitre03">
+                <div id="texte1-chap03" class="text-center"> 
+                    <p>Et qu'en été, il se baigne dans la mer avec un flotteur en forme de beigne.</p>
+                </div>
+                <img src="./img/img_elements_visuels/chap_03/nuages_chap03.png" alt="nuages" id="nuages-chap03">
+                <img src="./img/img_elements_visuels/chap_03/palmier_chap03.png" alt="palmier" id="palmier-chap03">
+                <img src="./img/img_elements_visuels/chap_03/soleil_chap03.png" alt="soleil" id="soleil-chap03">
+                <img src="./img/img_elements_visuels/chap_03/vagues_arriere_chap03.png" alt="vagues-arriere" id="vagues-arriere-chap03">
+                <img src="./img/img_elements_visuels/chap_03/vagues_avant_chap03.png" alt="vagues-avant" id="vagues-avant-chap03">
+                <img src="./img/img_personnages/chap_03/homme_chap03.png" alt="homme" id="homme-chap03">
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>rotate</li> 
+                <li>scale</li> 
+                <li>translation x</li>
+                <li>translation y</li>
+                <li>timeline</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 3 -------------------- -->
+
+<!-- ---------- Début Chapitre 4 ------------------ -->
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap04.png" id="bg-chap04">
+            <div id="chapitre04">
+                <div id="texte1-chap04" class="text-center"> 
+                    <p>Un jour, Marguerite la fleuriste entre dans sa pâtisserie pour lui commander un beigne.</p>
+                </div>
+                    <img src="./img/img_elements_visuels/chap_04/bulle_chap04.png" alt="bulle" id="bulle-chap04">
+                <div id="perso-chap04">
+                    <img src="./img/img_personnages/chap_04/bras_droit_chap04.png" alt="bras-droit" id="bras-chap04">
+                    <img src="./img/img_personnages/chap_04/homme_chap04.png" alt="homme" id="homme-chap04">
+                    <img src="./img/img_personnages/chap_04/tete_chap04.png" alt="tete" id="tete-chap04">
+                    <img src="./img/img_personnages/chap_04/yeux_chap04.png" alt="yeux" id="yeux-chap04">
+                </div>
+                <div id="perso2-chap04">
+                    <img src="./img/img_personnages/chap_04/femme_chap04.png" alt="femme" id="femme-chap04">
+                    <img src="./img/img_personnages/chap_04/yeux_femme_chap04.png" alt="yeux-femme" id="yeux-femme-chap04">
+                </div>
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>rotate</li> 
+                <li>translation x</li> 
+                <li>opacity</li> 
+                <li>scale</li>
+                <li>timeline</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 4 -------------------- -->
+
+<!-- ---------- Début Chapitre 5 ------------------ -->   
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap05.png" id="bg-chap05">
+            <div id="chapitre05">
+                <div id="texte1-chap05" class="text-center"> 
+                    <p>C'est le coup de foudre instantané, Albert et Marguerite tombent amoureux.</p>
+                <div id="spritesheet-beigne"></div>
+                </div>
+                    <img src="./img/img_elements_visuels/coeur_lineaire.png" alt="coeur" id="coeur-lineaire-chap05">
+                    <img src="./img/img_elements_visuels/chap_05/fond_bas_chap05.png" alt="fond-bas" id="fond-bas-chap05">
+                    <img src="./img/img_elements_visuels/chap_05/fond_haut_chap05.png" alt="fond-haut" id="fond-haut-chap05">
+                <div id="perso1-chap05">
+                    <img src="./img/img_personnages/chap_05/homme_chap05.png" alt="homme" id="homme-chap05">
+                    <img src="./img/img_personnages/chap_05/moustache_chap05.png" alt="moustache" id="moustache-chap05">
+                    <img src="./img/img_personnages/chap_05/yeux_homme_chap05.png" alt="yeux-homme" id="yeux-homme-chap05">
+                </div>
+                <div id="perso2-chap05">
+                    <img src="./img/img_personnages/chap_05/femme_chap05.png" alt="femme" id="femme-chap05">
+                    <img src="./img/img_personnages/chap_05/joues_chap05.png" alt="joues" id="joues-chap05">
+                    <img src="./img/img_personnages/chap_05/yeux_femme_chap05.png" alt="yeux-femme" id="yeux-femme-chap05">
+                </div>
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>translation x</li> 
+                <li>rotate</li> 
+                <li>opacity</li>
+                <li>scale y</li> 
+                <li>timeline</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 5 -------------------- -->
+
+<!-- ---------- Début Chapitre 6 ------------------ -->
+    <section class="chapitre">
+        <img src="./img/img_arriere_plan/background_chap06.png" id="bg-chap06">
+        <div id="chapitre06">
+            <div id="texte1-chap06" class="text-center"> 
+                <p>Au fil des mois, ils apprennent à se connaître.</p>
+            </div>
+            <div id="beigne-composition-chap06">
+                <img src="./img/img_elements_visuels/chap_06/beigne_composition.png" alt="beigne" id="beigne-chap06">
+                <img src="./img/img_elements_visuels/chap_06/cremage_composition.png" alt="cremage" id="cremage-chap06">
+                <img src="./img/img_elements_visuels/chap_06/bonbons_composition.png" alt="bonbons" id="bonbons-chap06">
+            </div>
+        </div>
+        <div class="texture"></div>
+        <ul class="technique-gsap"> 
+            <li></li>
+            <li>scrollTrigger 
+                <ul> 
+                    <li>trigger=</li> 
+                    <li>...</li> 
+                </ul> 
+            </li> 
+        </ul>
+    </section>
+<!-- ---------- Fin Chapitre 6 -------------------- -->
+
+<!-- ---------- Début Chapitre 7 ------------------ -->
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap07.png" id="bg-chap07">
+            <div id="chapitre07">
+                <div id="texte1-chap07" class="text-center"> 
+                    <p>Si bien qu'un jour, ils se marient sur un beigne dans le champ de fleurs de Marguerite.</p>
+                </div>
+                <img src="./img/img_elements_visuels/chap_07/beigne_chap07.png" alt="beigne" id="beigne-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_01_chap07.png" alt="fleur" id="fleur01-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_02_chap07.png" alt="fleur" id="fleur02-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_03_chap07.png" alt="fleur" id="fleur03-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_04_chap07.png" alt="fleur" id="fleur04-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_05_chap07.png" alt="fleur" id="fleur05-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_06_chap07.png" alt="fleur" id="fleur06-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_07_chap07.png" alt="fleur" id="fleur07-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_08_chap07.png" alt="fleur" id="fleur08-chap07">
+                <img src="./img/img_elements_visuels/chap_07/fleur_09_chap07.png" alt="fleur" id="fleur09-chap07">
+                <img src="./img/img_elements_visuels/chap_07/nuages_chap07.png" alt="nuages" id="nuages-chap07">
+                <img src="./img/img_personnages/chap_07/femme_chap07.png" alt="femme" id="femme-chap07">
+                <img src="./img/img_personnages/chap_07/homme_chap07.png" alt="homme" id="homme-chap07">
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>rotate</li> 
+                <li>translation x</li>  
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 7 -------------------- -->
+
+<!-- ---------- Début Chapitre 8 ------------------ -->
+        <section class="chapitre">
+            <img src="./img/img_arriere_plan/background_chap08.png" id="bg-chap08">
+            <div id="chapitre08">
+                <div id="texte1-chap08" class="text-center"> 
+                    <p>Aujourd'hui, ils combinent leurs passions en cultivant des fleurs en forme de beigne. </p>
+                </div>
+                <img src="./img/img_elements_visuels/coeur_morphing.png" alt="coeur" id="coeur-morphing-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_01_arriere_chap08.png" alt="fleur" id="fleur01-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_02_arriere_chap08.png" alt="fleur" id="fleur02-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_03_arriere_chap08.png" alt="fleur" id="fleur03-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_04_arriere_chap08.png" alt="fleur" id="fleur04-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_05_arriere_chap08.png" alt="fleur" id="fleur05-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_06_avant_chap08.png" alt="fleur" id="fleur06-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_07_avant_chap08.png" alt="fleur" id="fleur07-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_08_avant_chap08.png" alt="fleur" id="fleur08-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_09_avant_chap08.png" alt="fleur" id="fleur09-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_10_avant_chap08.png" alt="fleur" id="fleur10-chap08">
+                <img src="./img/img_elements_visuels/chap_08/fleur_centre_chap08.png" alt="fleur-beigne" id="fleur-beigne-chap08">
+                <img src="./img/img_elements_visuels/chap_08/soleil_chap08.png" alt="soleil" id="soleil-chap08">
+                <img src="./img/img_personnages/chap_08/femme_chap08.png" alt="femme" id="femme-chap08">
+                <img src="./img/img_personnages/chap_08/homme_chap08.png" alt="homme" id="homme-chap08">
+            </div>
+            <div class="texture"></div>
+            <ul class="technique-gsap"> 
+                <li>rotate</li> 
+                <li>scale</li> 
+                <li>timeline</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=</li> 
+                        <li>...</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+        
+<!-- ---------- Fin Chapitre 8 -------------------- -->
+    
+        <footer>
+            <div id="pied-de-page">
+                <p class="text-center"><a href="https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/">Projet scrollytelling</a> créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
+                <br> © 2024 - Conception, illustrations et développement web: Melody Chiasson texture: pexels.com</p>  
+            </div> 
+        </footer>
+    </main>
+    <!-- Script-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

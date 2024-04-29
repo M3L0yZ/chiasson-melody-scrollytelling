@@ -1,0 +1,934 @@
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/ 
+@font-face {
+    font-family: "Kristen";
+    src: url("../fonts/kristen.ttf");
+}
+
+@font-face {
+    font-family: "Cooper";
+    src: url("../fonts/cooper.ttf");
+}
+
+:root {
+    --green: #55B78B;
+    --blue: #97C7E8;
+    --pink: #F291C0;
+    --yellow: #F291C0;
+    --orange: #F4A789;
+    --brown: #DDB07A;
+    --grey: #E2E2E2;
+    --purple: #C588ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+   font-family: "Kristen";
+   font-weight: bold;
+}
+
+header {
+    width: 103vw;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-image: url("../img/img_arriere_plan/accueil.png");
+    background-size: cover;
+    position: relative;
+    filter: contrast(110%) brightness(120%) hue-rotate(-10deg);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    font-size: 1vw;
+    background-color: var(--blue);
+    position: relative;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 8vw;
+    font-family: "Cooper";
+    position: relative;
+    color: rgb(44, 44, 44);
+}
+
+h2 {
+    font-size: 3vw;
+    font-family: "Cooper";
+    position: relative;
+    z-index: 1;
+}
+
+/*--------------------------------------------------------- 
+# En-tête et pied de page
+---------------------------------------------------------*/ 
+
+.source {
+    font-size: 1vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.fleches {
+    /*background-color: blue;*/
+    height: fit-content;
+    position: absolute;
+    bottom: 240px;
+    z-index: 1;
+}
+
+.defilement {
+    font-size: 2.6vw;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------- 
+# Styles généraux des chapitres
+---------------------------------------------------------*/ 
+
+section {
+    position: relative;
+    border: solid 1px red; /*temporaire*/
+}
+
+.chapitre {
+    width: 103vw;
+    height: auto;
+    aspect-ratio: 16/9;
+    position: relative;
+    filter: contrast(110%) brightness(110%) hue-rotate(-15deg) saturate(110%);
+}
+
+.texture {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/img_arriere_plan/texture_papier.jpg");
+    mix-blend-mode: multiply;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/ 
+#chapitre01 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap01 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -2vw ;
+    object-fit: cover;
+}
+
+#affiche01-chap01 {
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    width: 30%;
+}
+
+#affiche02-chap01 {
+    position: absolute;
+    top: 5%;
+    right: 4.5%;
+    width: 10%;
+}
+
+#affiche03-chap01 {
+    position: absolute;
+    top: 5%;
+    right: 83%;
+    width: 15%;
+}
+
+#perso-chap01 {
+    width: 100%;
+    height: 100%;
+    top: 2%;
+    right: 1%;
+    position: relative;
+    /*background-color: #55B78B;*/
+}
+
+#bras-chap01 {
+    position: absolute;
+    top: 40%;
+    right: 6%;
+    width: 10%;
+}
+
+#homme-chap01 {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    width: 20%;
+}
+
+#tete-chap01 {
+    position: absolute;
+    top: 11%;
+    right: 13.8%;
+    width: 11%;
+}
+
+#yeux-chap01 {
+    position: absolute;
+    top: 35%;
+    right: 16.2%;
+    width: 6%;
+}
+
+#texte1-chap01 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: 70%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 2
+----------------------------------------------------------*/ 
+#chapitre02 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap02 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -2vw ;
+    object-fit: cover;
+}
+
+#plan-arriere-chap02 {
+    position: absolute;
+    top: 0;
+    left: -18%;
+    width: 160%;
+}
+
+#plan-centre-chap02 {
+    position: absolute;
+    top: -30%;
+    left: -18%;
+    width: 160%;
+}
+
+#plan-avant-chap02 {
+    position: absolute;
+    top: 30%;
+    right: -5%;
+    width: 60%;
+    z-index: 1;
+}
+
+#homme-chap02 {
+    position: absolute;
+    top: 18%;
+    right: 3%;
+    width: 20%;
+}
+
+#texte1-chap02 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: -20%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 3
+----------------------------------------------------------*/ 
+#chapitre03 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap03 {
+    width: 106%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -3vw ;
+    object-fit: cover;
+}
+
+#nuages-chap03 {
+    position: absolute;
+    top: -5%;
+    left: -33%;
+    width: 120%;
+    z-index: 1;
+}
+
+#palmier-chap03 {
+    position: absolute;
+    top: 2%;
+    right: 30%;
+    width: 30%;
+    z-index: 2;
+}
+
+#soleil-chap03 {
+    position: absolute;
+    top: 2%;
+    right: 6%;
+    width: 20%;
+}
+
+#vagues-arriere-chap03 {
+    position: absolute;
+    top: 55%;
+    right: 30%;
+    width: 80%;
+}
+
+#vagues-avant-chap03 {
+    position: absolute;
+    top: 70%;
+    right: 03%;
+    width: 100%;
+    z-index: 20;
+}
+
+#homme-chap03 {
+    position: absolute;
+    top: 35%;
+    left: 6%;
+    width: 30%;
+    z-index: 10;
+}
+
+#texte1-chap03 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: 70%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/ 
+#chapitre04 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap04 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -2vw ;
+    object-fit: cover;
+}
+
+#bulle-chap04 {
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    width: 16%;
+}
+
+#perso-chap04 {
+    width: 100%;
+    height: 100%;
+    top: 2%;
+    right: 60%;
+    position: relative;
+    /*background-color: #55B78B;*/
+}
+
+#bras-chap04 {
+    position: absolute;
+    top: 40%;
+    right: 6%;
+    width: 10%;
+}
+
+#homme-chap04 {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    width: 20%;
+}
+
+#tete-chap04 {
+    position: absolute;
+    top: 11%;
+    right: 13.8%;
+    width: 11%;
+}
+
+#yeux-chap04 {
+    position: absolute;
+    top: 35%;
+    right: 16.2%;
+    width: 6%;
+}
+
+#perso2-chap04 {
+    width: 65%;
+    height: 100%;
+    top: 30%;
+    right: -10%;
+    position: relative;
+}
+
+#femme-chap04 {
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    width: 30%;
+}
+
+#yeux-femme-chap04 {
+    position: absolute;
+    top: -87%;
+    right: 10%;
+    width: 8.5%;
+}
+
+#texte1-chap04 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: -20%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/ 
+#chapitre05 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap05 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -2vw ;
+    object-fit: cover;
+}
+
+#fond-bas-chap05 {
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    width: 160%;
+}
+
+#fond-haut-chap05 {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 160%;
+}
+
+#perso1-chap05 {
+    width: 100%;
+    height: 100%;
+    top: 2%;
+    right: 60%;
+    position: relative;
+}
+
+#homme-chap05 {
+    position: absolute;
+    top: -16%;
+    right: -2%;
+    width: 40%;
+}
+
+#moustache-chap05 {
+    position: absolute;
+    top: 38.5%;
+    right: 11.5%;
+    width: 18%;
+}
+
+#yeux-homme-chap05 {
+    position: absolute;
+    top: 32%;
+    right: 15%;
+    width: 10%;
+}
+
+#perso2-chap05 {
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    right: 10%;
+    position: relative;
+}
+
+#femme-chap05 {
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    width: 30%;
+}
+
+#joues-chap05 {
+    position: absolute;
+    top: -75.5%;
+    right: 9%;
+    width: 10%;
+}
+
+#yeux-femme-chap05 {
+    position: absolute;
+    top: -81%;
+    right: 10%;
+    width: 8.5%;
+}
+
+#texte1-chap05 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: -20%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+#coeur-lineaire-chap05 {
+    position: absolute;
+    width: 40%;
+    top: 4%;
+    right: 32%;
+    z-index: 1;
+}
+
+#spritesheet-beigne {
+    width: 20%;
+    bottom: -655%;
+    left: 40%;
+    position: absolute;
+    aspect-ratio: 1.2/1;
+    background-size: 100% 700% ;
+    background-image: url("../img/img_elements_visuels/beigne_animation_loop.png");
+    animation-name: beigne;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(7);
+    animation-play-state: running;
+}
+
+@keyframes beigne {
+    from { background-position: 0 0;}
+    to { background-position: 0 4200%;}
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/ 
+#chapitre06 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap06 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -3vw ;
+    object-fit: cover;
+}
+
+#beigne-composition-chap06 {
+    width: 100%;
+    height: 100%;
+    top: 2%;
+    right: 0;
+    position: relative;
+}
+
+#beigne-chap06 {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    width: 40%;
+}
+
+#cremage-chap06 {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    width: 40%;
+}
+
+#bonbons-chap06 {
+    position: absolute;
+    top: 43%;
+    right: 30%;
+    width: 40%;
+}
+
+#texte1-chap06 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: -20%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 7
+----------------------------------------------------------*/  
+#chapitre07 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap07 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -2vw ;
+    object-fit: cover;
+}
+
+#beigne-chap07 {
+    position: absolute;
+    top: 48%;
+    right: 31%;
+    width: 45%;
+}
+
+#fleur01-chap07 {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 7%;
+    z-index: 1;
+}
+
+#fleur02-chap07 {
+    position: absolute;
+    top: 8%;
+    right: 70%;
+    width: 7%;
+    z-index: 1;
+}
+
+#fleur03-chap07 {
+    position: absolute;
+    top: 18%;
+    right: 90%;
+    width: 7%;
+    z-index: 1;
+}
+
+#fleur04-chap07 {
+    position: absolute;
+    top: 36%;
+    right: 75%;
+    width: 7%;
+}
+
+#fleur05-chap07 {
+    position: absolute;
+    top: 28%;
+    right: 19%;
+    width: 7%;
+}
+
+#fleur06-chap07 {
+    position: absolute;
+    top: 68%;
+    right: 90%;
+    width: 7%;
+}
+
+#fleur07-chap07 {
+    position: absolute;
+    top: 68%;
+    right: 8%;
+    width: 7%;
+}
+
+#fleur08-chap07 {
+    position: absolute;
+    top: 78%;
+    right: 30%;
+    width: 7%;
+}
+
+#fleur09-chap07 {
+    position: absolute;
+    top: 78%;
+    right: 68%;
+    width: 7%;
+}
+
+#nuages-chap07 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160%;
+}
+
+#femme-chap07 {
+    position: absolute;
+    top: 26%;
+    right: 37%;
+    width: 16%;
+}
+
+#homme-chap07 {
+    position: absolute;
+    top: 26%;
+    right: 46%;
+    width: 20%;
+}
+
+#texte1-chap07 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: 70%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 8
+----------------------------------------------------------*/ 
+#chapitre08 {
+    width: 100%;
+    height: 100%;
+    /*background-color: #dd7aa3;*/
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#bg-chap08 {
+    width: 103%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-position: -3vw ;
+    object-fit: cover;
+}
+
+#fleur01-chap08 {
+    position: absolute;
+    top: 36%;
+    right: 8%;
+    width: 7%;
+    z-index: 1;
+}
+
+#fleur02-chap08 {
+    position: absolute;
+    top: 20%;
+    right: 90%;
+    width: 7%;
+    z-index: 1;
+}
+
+#fleur03-chap08 {
+    position: absolute;
+    top: 41%;
+    right: 84%;
+    width: 7%;
+    z-index: 1;
+}
+
+#fleur04-chap08 {
+    position: absolute;
+    top: 32%;
+    right: 58%;
+    width: 7%;
+}
+
+#fleur05-chap08 {
+    position: absolute;
+    top: 28%;
+    right: 39%;
+    width: 7%;
+}
+
+#fleur06-chap08 {
+    position: absolute;
+    top: 76%;
+    right: 90%;
+    width: 7%;
+}
+
+#fleur07-chap08 {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 7%;
+}
+
+#fleur08-chap08 {
+    position: absolute;
+    top: 18%;
+    right: 29%;
+    width: 7%;
+}
+
+#fleur09-chap08 {
+    position: absolute;
+    top: 70%;
+    right: 36%;
+    width: 7%;
+}
+
+#fleur10-chap08 {
+    position: absolute;
+    top: 78%;
+    right: 58%;
+    width: 7%;
+}
+
+#fleur-beigne-chap08 {
+    position: absolute;
+    top: 22%;
+    right: 42%;
+    width: 16%;
+}
+
+#soleil-chap08 {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 18%;
+}
+
+#femme-chap08 {
+    position: absolute;
+    top: 34%;
+    right: 15%;
+    width: 20%;
+}
+
+#homme-chap08 {
+    position: absolute;
+    top: 34%;
+    right: 58%;
+    width: 32%;
+}
+
+#texte1-chap08 {
+    position: absolute;
+    width: 100%;
+    font-size: 2.2vw;
+    z-index: 10;
+    top: -20%;
+    right: -10%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin: 12%;
+}
+
+#coeur-morphing-chap08 {
+    position: absolute;
+    width: 20%;
+    top: 8%;
+    right: 40%;
+    z-index: 1;
+}
+
+/*---------------------------------------------------------- 
+# Commentaires HTML
+----------------------------------------------------------*/ 
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}  
