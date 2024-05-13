@@ -2,7 +2,6 @@
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(MotionPathPlugin)
-gsap.registerPlugin(MorphSVGPlugin)
 
 //Animation flèches "call to action"
 gsap.set(".fleche", {
